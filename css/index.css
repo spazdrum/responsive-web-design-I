@@ -79,15 +79,17 @@ h1, h2, h3, h4, h5 {
 header {
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
+    flex-wrap: wrap-reverse;
+    position: absolute;
     top: 0;
-    background-color: #081379c9;
+    width: 100%;
+    /* background-color: #081379c9; */
 }
 
 header nav {
     display: flex;
     flex-wrap: wrap;
-    width: 691px;
+    width: 35%;
     vertical-align: top;
     margin-top: 13px;
 }
@@ -95,7 +97,7 @@ header nav {
 header nav a {
     margin-right: 65px;
     font-size: 14px;
-    color: #ffffff;
+    color: #686868;
     text-decoration: none;
 }
 
@@ -118,6 +120,7 @@ header .logo:last-child {
 
 .tagline {
     display: flex;
+    justify-content: center;
 }
 
 .tagline .cta-text {
@@ -208,6 +211,19 @@ footer {
 
 /* Tablet */
 
-
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        align-content: center;
+    }
+    
+    .tagline img {
+        display: none;
+    }
+}
 
 /* Mobile */
+
+@media (max-width: 500px) {
+
+}
