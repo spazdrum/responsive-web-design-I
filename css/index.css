@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
-header {
+.header {
     display: flex;
     flex-wrap: wrap;
     flex-wrap: wrap-reverse;
@@ -86,35 +86,37 @@ header {
     /* background-color: #081379c9; */
 }
 
-header nav {
+.nav {
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    width: 681px;
     vertical-align: top;
     margin-top: 13px;
 }
 
-header nav a {
+.nav a {
     margin-right: 65px;
     font-size: 14px;
     color: #686868;
     text-decoration: none;
 }
 
-header nav a:first-child {
+.header .nav a:first-child {
     margin-left: 10px;
 }
 
-header nav a:last-child {
+.header .nav a:last-child {
     margin-right: 0;
 }
 
-header .logo {
+.logo {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-header .logo:last-child {
+.logo:last-child {
     margin-right: 10px;
 }
 
@@ -212,13 +214,53 @@ footer {
 /* Tablet */
 
 @media (max-width: 800px) {
-    header {
-        display: flex;
-        align-content: center;
+    .container {
+        width: 700px;
     }
     
     .tagline img {
         display: none;
+    }
+
+    .header {
+        flex-wrap: column-reverse;
+        justify-content: center;
+    }
+
+    .header .nav {
+        margin-bottom: 10%;
+    }
+
+    .header .nav a:first-child {
+        margin-left: 0px;
+    }
+
+    .logo {
+        display: flex;
+        /* justify-content: center; */
+        margin-right: 10px;
+    }
+
+    .logo:last-child {
+        margin-right: 10px;
+    }
+
+    .page-content .top-content .content-box {
+        width: 300px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .page-content .middle-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .page-content .bottom-content .content-box {
+        display: inline-flex;
+        flex-flow: column;
+        width: 200px;
+        justify-content: space-evenly;
     }
 }
 
