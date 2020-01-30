@@ -215,7 +215,7 @@ footer {
 
 @media (max-width: 800px) {
     .container {
-        width: 700px;
+        width: 87.5%;
     }
     
     .tagline img {
@@ -267,5 +267,41 @@ footer {
 /* Mobile */
 
 @media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
 
+    .header {
+        display: flex;
+        padding-top: 15px;
+        position: absolute;
+    }
+
+    .header .nav {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .header .nav a {
+        display: inline-block;
+        flex-direction: column;
+        width: 89%;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+
+    .tagline {
+        margin-top: 80%;
+    }
+
+    .page-content .top-content .content-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .page-content .bottom-content .content-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
